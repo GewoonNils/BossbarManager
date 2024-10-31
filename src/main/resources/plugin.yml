@@ -1,0 +1,10 @@
+name: BossBarManager
+version: 1.0
+main: dev.gnils.bossbarmanager.BoosterBossBarPlugin
+api-version: 1.21
+depend: [PlaceholderAPI]
+commands:
+  bossbarreload:
+    description: Herlaadt de BoosterBossBar configuratie
+    usage: /bossbarreload
+    permission: bossbarmanager.reload

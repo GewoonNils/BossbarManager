@@ -1,0 +1,7 @@
+# Vertraging in ticks voordat de bossbar wordt getoond aan nieuwe spelers (20 ticks = 1 seconde)
+join-delay: 40
+# BossBar instellingen
+bossbar:
+  style: SOLID
+  color: BLUE
+  title: "Actieve Booster: %booster%"
