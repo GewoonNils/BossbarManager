@@ -1,7 +1,13 @@
-# Vertraging in ticks voordat de bossbar wordt getoond aan nieuwe spelers (20 ticks = 1 seconde)
-join-delay: 40
-# BossBar instellingen
+# The delay in ticks before the bossbar gets activated (20 ticks = 1 second)
+join-delay: 20
+
+# BossBar bossbar settings
 bossbar:
-  style: SOLID
-  color: BLUE
-  title: "Actieve Booster: %booster%"
+  style: SOLID #Available styles: SOLID, SEGMENTED_6, SEGMENTED_10, SEGMENTED_12, SEGMENTED_20
+  color: YELLOW
+  title: "" #The title of the bossbar (leave blank for none).
+
+# Placeholder settings
+placeholder:
+  value: "%axboosters_active_1_audience%" #The placeholder the plugin needs to look for, to activate the bossbar.
+  inactive: "---" #The value the placeholder gives when the bossbar needs to be inactive.

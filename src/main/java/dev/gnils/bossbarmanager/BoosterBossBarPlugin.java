@@ -22,6 +22,8 @@ public class BoosterBossBarPlugin extends JavaPlugin implements Listener {
     private String barTitle;
     private BarStyle barStyle;
     private BarColor barColor;
+    private String placeholderValue;
+    private String placeholderInactive;
 
     @Override
     public void onEnable() {
@@ -63,6 +65,8 @@ public class BoosterBossBarPlugin extends JavaPlugin implements Listener {
             barColor = BarColor.BLUE;
             getLogger().warning("Invalid bossbar color in config, using BLUE");
         }
+        placeholderValue = config.getString("placeholder.value", "%axboosters_active_1_audience%");
+        placeholderInactive = config.getString("placeholder.inactive", "---");
     }
 
     @EventHandler
@@ -85,9 +89,9 @@ public class BoosterBossBarPlugin extends JavaPlugin implements Listener {
     }
 
     private void updateBoosterBar(Player player) {
-        String boosterStatus = PlaceholderAPI.setPlaceholders(player, "%axboosters_active_1_audience%");
+        String boosterStatus = PlaceholderAPI.setPlaceholders(player, placeholderValue);
 
-        if (!boosterStatus.equals("---")) {
+        if (!boosterStatus.equals(placeholderInactive)) {
             String title = barTitle.replace("%booster%", boosterStatus);
             boosterBar.setTitle(title);
             boosterBar.setStyle(barStyle);
@@ -101,9 +105,9 @@ public class BoosterBossBarPlugin extends JavaPlugin implements Listener {
     }
 
     private void updateBoosterBarForPlayer(Player player) {
-        String boosterStatus = PlaceholderAPI.setPlaceholders(player, "%axboosters_active_1_audience%");
+        String boosterStatus = PlaceholderAPI.setPlaceholders(player, placeholderValue);
 
-        if (!boosterStatus.equals("---")) {
+        if (!boosterStatus.equals(placeholderInactive)) {
             boosterBar.addPlayer(player);
         }
     }
