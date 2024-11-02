@@ -1,0 +1,9 @@
+messages:
+  plugin_enabled: "BoosterBossBar is enabled"
+  plugin_disabled: "BoosterBossBar is disabled"
+  reload_success: "&7The config is reloaded succesfully"
+  no_permission: "&cYou don't have permission the execute this command."
+  help_menu:
+    header: "&7&m===== &6&lBoosterBossBar Help &7&m====="
+    command_help: "&a/bbm &7- Shows this help menu."
+    command_reload: "&a/bbm reload &7- Reloads the config."

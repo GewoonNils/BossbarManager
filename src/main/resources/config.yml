@@ -1,5 +1,5 @@
 # The delay in ticks before the bossbar gets activated (20 ticks = 1 second)
-join-delay: 20
+join-delay: 10
 
 # BossBar bossbar settings
 bossbar:
