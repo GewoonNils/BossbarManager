@@ -7,7 +7,7 @@ It adds an extra bossbar to help space out so that you can use the axboosters bo
 ## Dependencies
 - [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/)
 
-## Soft Dependecies
+## Soft Dependencies
 - [Betterhud](https://github.com/toxicity188/BetterHud) (Makes the bossbar invisible)
 
 ## Before
